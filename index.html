@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Responsive Carousel Testimonial Cards</title>
+</head>
+<body>
+    <section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide 1">
+                    <div class="testimonialBox">
+                        <img class="quote" src="./img/quote.png">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis explicabo neque sed quos corporis asperiores qui odio quas assumenda.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="./img/profile1.png" alt="">
+                                </div>
+                                <h3>Name Surname<br><span>Creative Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide 2">
+                    <div class="testimonialBox">
+                        <img class="quote" src="./img/quote.png">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis explicabo neque sed quos corporis asperiores qui odio quas assumenda.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="./img/profile2.png" alt="">
+                                </div>
+                                <h3>Name Surname<br><span>Web Developer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide 3">
+                    <div class="testimonialBox">
+                        <img class="quote" src="./img/quote.png">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto debitis explicabo neque sed quos corporis asperiores qui odio quas assumenda.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="./img/profile3.png" alt="">
+                                </div>
+                                <h3>Name Surname<br><span>Graphic Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination">
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+        loop: true,
+      });
+    </script>
+</body>
+</html>
